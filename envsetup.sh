@@ -644,6 +644,8 @@ function lunch()
         popd > /dev/null
         check_product $product
     fi
+
+    check_product $product
     TARGET_PRODUCT=$product \
     TARGET_BUILD_VARIANT=$variant \
     TARGET_PLATFORM_VERSION=$version \
